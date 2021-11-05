@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1020637783338441360
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1020637783338441363}
+  - component: {fileID: 1020637783338441362}
+  - component: {fileID: 1020637783338441373}
+  - component: {fileID: 6037743639951659730}
+  - component: {fileID: 7353822725071012358}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1020637783338441363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020637783338441360}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1020637783338441362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020637783338441360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0748a4ea1a7ba8042983e6de660374bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedObject: {fileID: 0}
+  snapRange: 0.6
+--- !u!114 &1020637783338441373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020637783338441360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b77d8e2849521f347801d168a4ddd08c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theme: orange
+  volume: 0.15
+  roomId: 
+  username: 
+  isValidWaiting: 0
+  eachRoomTab: {fileID: 8055462797487563470, guid: 6fbab1cfde1bf4af6b63b70c54f67f96, type: 3}
+  justFindRoom: 0
+  ships: []
+  shipsTiles: []
+  isReady: 0
+  cursor: {fileID: 2338307387668429688, guid: 22773eb167f8d62429547d1fbc51560b, type: 3}
+  playerTiles: []
+  enemyTiles: []
+  chatManager: {fileID: 0}
+  pauseScreen: {fileID: 6873303256817316892, guid: c62e3b0ad4d2faa4abd9af406a64f559, type: 3}
+  timer: {fileID: 0}
+  time: 0
+  enemyName: 
+  playerGameScore: 0
+  enemyGameScore: 0
+  currentRound: 0
+  rounds: 0
+  isMyTurn: 0
+  currentEmote: 
+  justResume: 0
+  justPaused: 0
+  canPause: 1
+  isPaused: 0
+  roundEnded: 0
+  gameEnded: 0
+  justEnded: 0
+  matchResult: {fileID: 1613483187158045650, guid: fdd76cc34eaa4ce4a829519ef256c551, type: 3}
+  enemySurrendered: 0
+  winner: 
+  playerScore: 0
+  enemyScore: 0
+  sceneToLoad: 
+--- !u!114 &6037743639951659730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020637783338441360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a6944460638954da0e4ca45eb00e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canAttack: 0
+  targetColor: {r: 0.6901961, g: 0.21960784, b: 0.21960784, a: 1}
+--- !u!114 &7353822725071012358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020637783338441360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c461251631fcdb40b058fad92cae4d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
